@@ -93,7 +93,7 @@ bot.onText(/^\/getFolder/i, (msg) => {
   }
 });
 
-bot.onText(/^\/cancelMirror/i, (msg) => {
+bot.onText(/^\/cancel/i, (msg) => {
   var authorizedCode = msgTools.isAuthorized(msg);
   if (msg.reply_to_message) {
     var dlDetails = dlManager.getDownloadByMsgId(msg.reply_to_message);
